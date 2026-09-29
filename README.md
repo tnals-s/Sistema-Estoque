@@ -1,14 +1,14 @@
 # 🛒 Sistema de Controle de Estoque (E-commerce)
 
-> Sistema desenvolvido em **C** para gerenciamento e consulta de estoque de um e-commerce, aplicando estruturas de dados, algoritmos avançados de ordenação e busca eficiente.
+> Sistema desenvolvido em **C** para consulta de estoque de um e-commerce, aplicando estruturas de dados, algoritmos de ordenação e busca eficiente.
 
 ---
 
-## 📋 Sobre o Projeto
-Este projeto foi desenvolvido com foco na aplicação prática de Estruturas de Dados e Algoritmos (EDA). O sistema simula o inventário de uma loja virtual contendo produtos reais (como eletrônicos, livros e acessórios), realizando a ordenação automática do catálogo e permitindo consultas rápidas por meio de busca otimizada.
+## Sobre o Projeto
+Este projeto foi desenvolvido com foco na aplicação prática de Estruturas de Dados e Algoritmos. O sistema simula o inventário de uma loja virtual contendo produtos reais (como eletrônicos, livros e acessórios), realizando a ordenação automática do catálogo e permitindo consultas rápidas por meio de busca otimizada.
 
-## 🛠️ Tecnologias e Conceitos Aplicados
-* **Linguagem:** C (Padrão C99)
+## Tecnologias e Conceitos Aplicados
+* **Linguagem:** C
 * **Estruturas de Dados:** Uso de `struct` e `typedef` para modelagem de registros compostos (`Produto`).
 * **Algoritmo de Ordenação:** **Merge Sort** (Abordagem *Divide and Conquer* / Divisão e Conquista) com complexidade de tempo $O(n \log n)$.
 * **Algoritmo de Busca:** **Busca Binária Iterativa** para localização rápida de itens pelo código, com complexidade de tempo $O(\log n)$.
@@ -16,17 +16,17 @@ Este projeto foi desenvolvido com foco na aplicação prática de Estruturas de 
 
 ---
 
-## 🔍 Funcionalidades do Sistema
+## Funcionalidades do Sistema
 1. **Listagem Inicial:** Exibe o estoque cadastrado em sua ordem original de inserção (desorganizado).
 2. **Ordenação Automática:** Aplica o *Merge Sort* para ordenar todo o vetor de produtos com base no **código do produto**.
 3. **Busca Binária Interativa:** 
    * Menu no terminal para consulta de códigos.
    * Rastreio visual passo a passo das tentativas da busca binária (índices testados).
-   * Exibição detalhada dos dados do produto encontrado (Nome, Código e Preço formatado em Reais) ou mensagem de erro caso o item não exista.
+   * Exibição detalhada dos dados do produto encontrado (Nome, Código e Preço) ou mensagem de erro caso o item não exista.
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 Certifique-se de ter um compilador de C instalado em sua máquina (como o `gcc`). No seu terminal, execute os seguintes comandos:
 
@@ -42,3 +42,27 @@ gcc ecommerce2.c -o ecommerce
 
 # 4. Execute o programa
 ./ecommerce
+```
+---
+
+## Exemplo de Saída no Terminal
+---- ESTOQUE INICIAL (DESORGANIZADO) ----
+Codigo     | Nome                           | Preco     
+25         | Celular iPhone 17 256GB        | R$ 5598.75  
+96         | Kindle 16GB                    | R$ 759.05   
+...
+----------------------------------------
+
+ORDENANDO...
+
+---- ESTOQUE ORDENADO ----
+Codigo     | Nome                           | Preco     
+10         | Garrafa Termica Stanley        | R$ 215.00   
+12         | Luminaria de Mesa LED          | R$ 169.90   
+...
+-------------------------
+
+---
+
+## Autora
+Marcelle Rodrigues Costa | tnals-s
