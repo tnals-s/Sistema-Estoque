@@ -43,22 +43,6 @@ gcc ecommerce2.c -o ecommerce
 # 4. Execute o programa
 ./ecommerce
 ```
----
-
-## Exemplo de Saída no Terminal
----- ESTOQUE INICIAL (DESORGANIZADO) ----
-Codigo     | Nome                           | Preco     
-25         | Celular iPhone 17 256GB        | R$ 5598.75   
-96         | Kindle 16GB                    | R$ 759.05
-...
-
-ORDENANDO...
-
----- ESTOQUE ORDENADO ----
-Codigo     | Nome                           | Preco     
-10         | Garrafa Termica Stanley        | R$ 215.00    
-12         | Luminaria de Mesa LED          | R$ 169.90
-...
 
 ---
 
